@@ -4,14 +4,14 @@ const Navbar = () => {
 
     return (
     <>    
-        <div className="navbar md:w-[80%] mx-auto">
+        <div className="navbar w-[80%] mx-auto">
             <div className="navbar-start">
                 <div className="flex items-center gap-1 font-bold text-3xl">
                 <p className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</p>
                 </div>
             </div>
-            <div className="navbar-center  md:flex">
-                <ul className="menu menu-horizontal gap-1 md:gap-3 px-1 text-lg">
+            <div className="navbar-center hidden md:flex">
+                <ul className="menu menu-horizontal lg:gap-3 px-1 text-lg">
                 <li>
                     <a>Products</a>
                 </li>
