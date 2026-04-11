@@ -2,6 +2,7 @@
 import './App.css'
 import Banner from './Components/Banner/Banner'
 import Summary from './Components/Banner/Summary'
+import Footer from './Components/Footer/Footer'
 import GEtStarted from './Components/GetStart/GetStarted'
 import Navbar from './Components/Navbar/Navbar'
 import Pricing from './Components/Pricing/Pricing'
@@ -31,6 +32,10 @@ function App() {
           <Pricing/>
           <Transform/>
         </section>
+
+        <footer>
+          <Footer/>
+        </footer>
       </div>
     </>
   )
