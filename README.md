@@ -1,16 +1,31 @@
-# React + Vite
+# DigiTools-Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DigiTools-Platform is a modern web application designed to showcase premium digital products with an intuitive shopping experience. Built using **React.js** and **Tailwind CSS**, the platform features a responsive interface styled according to Figma specifications. Users can seamlessly browse products, manage their cart, explore pricing options, and enjoy a smooth checkout flow — all enhanced with interactive alerts powered by **React-Toastify**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Technologies Used
+- **React.js** – Component-based UI development  
+- **Tailwind CSS + DaisyUI** – Modern styling and responsive design  
+- **JavaScript (ES6+)** – Core logic and interactivity  
+- **React-Toastify** – User-friendly alerts and notifications  
+- **JSON** – Product data management  
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
+### 1️⃣ Interactive Navbar
+- Displays cart icon with live product count.  
+- Fully responsive across devices.  
 
-## Expanding the ESLint configuration
+### 2️⃣ Product & Cart Toggle
+- Switch between Products and Cart section using tabs.  
+- Cart shows selected products with remove and checkout functionality.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 3️⃣ Product Cards
+- 3-column layout showcasing product details.  
+- Includes name, description, price, tag, features, and Buy Now button.  
+- Integrated with React-Toastify for alerts (add/remove/checkout).  
+
+---
+
