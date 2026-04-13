@@ -21,7 +21,7 @@ const Cards = ({model, carts, setCarts}) => {
 
     return (
     <>
-        <div className="card w-88 hover:w-90 bg-base-200 shadow-md h-full mx-auto">
+        <div className="card w-full max-w-sm bg-base-200 shadow-md h-full mx-auto text-left transition-transform duration-300 ease-in-out hover:scale-105">
             <div className="card-body flex flex-col justify-between">
                 
                 <div>
@@ -57,9 +57,9 @@ const Cards = ({model, carts, setCarts}) => {
 
                 </div>
                 
-                <div class="mt-6">
+                <div className="mt-6">
                     <button onClick={handleBuy} className= {`btn btn-block text-white rounded-full ${isBuy ? "bg-green-500" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA]"}`}>
-                        {isBuy ? "Added to Card" : "Buy Now"}
+                        {isBuy ? "Added to Cart" : "Buy Now"}
                     </button>
                 </div>
             </div>

@@ -25,28 +25,28 @@ const Navbar = ({carts}) => {
 
                 <div className="navbar-start">
                     <div className="flex items-center gap-1 font-bold text-3xl">
-                    <p className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</p>
+                        <p className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</p>
                     </div>
                 </div>
             </div>
 
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal lg:gap-3 px-1 text-lg">
-                <li>
-                    <a>Products</a>
-                </li>
-                <li>
-                    <a>Features</a>
-                </li>
-                <li>
-                    <a>Pricing</a>
-                </li>
-                <li>
-                    <a>Testimonial</a>
-                </li>
-                <li>
-                    <a>FAQ</a>
-                </li>
+                <ul className="menu menu-horizontal gap-0 lg:gap-3 px-1 text-lg">
+                    <li>
+                        <a>Products</a>
+                    </li>
+                    <li>
+                        <a>Features</a>
+                    </li>
+                    <li>
+                        <a>Pricing</a>
+                    </li>
+                    <li>
+                        <a>Testimonial</a>
+                    </li>
+                    <li>
+                        <a>FAQ</a>
+                    </li>
                 </ul>
             </div>
             
@@ -61,7 +61,6 @@ const Navbar = ({carts}) => {
                 <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white">Get Started</a>
             </div>
         </div>
-        <div className="border border-gray-100"> </div>
     </>
   );
 }
