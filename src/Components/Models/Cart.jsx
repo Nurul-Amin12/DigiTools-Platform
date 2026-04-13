@@ -1,3 +1,4 @@
+// import cartImg from "../../assets/products/shopping-cart.png";
 import { toast } from "react-toastify";
 
 const Cart = ({carts, setCarts}) => {
@@ -17,7 +18,7 @@ const Cart = ({carts, setCarts}) => {
 
         toast.success("Item Deleted")
     }
-    
+    const cartImg = `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWW1WxKxCqdVzsNsOVFYypNGkeZ2dswjyZ4w&s`;
     return (
     <>
         <div className="card w-[80%] shadow mx-auto text-left p-5 space-y-5">
@@ -27,8 +28,9 @@ const Cart = ({carts, setCarts}) => {
             {
                 carts.length === 0 ? 
                     <>
-                        <div className="text-2xl text-gray-400 p-10 text-center">
-                            Cart is Empty...
+                        <div className="text-2xl text-gray-400 p-10 text-center flex flex-col items-center space-y-5">
+                            <div className="w-20"><img className="w-full" src={cartImg} alt="Shopping Cart" /></div>
+                            <p>Cart is Empty...</p>
                         </div>
                     </>
                 :

@@ -61,6 +61,7 @@ const Navbar = ({carts}) => {
                 <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white">Get Started</a>
             </div>
         </div>
+        <div className="border border-gray-100 shadow"> </div>
     </>
   );
 }
