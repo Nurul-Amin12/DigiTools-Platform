@@ -6,6 +6,14 @@ const Cards = ({model, carts, setCarts}) => {
 
     const handleBuy = () => {
         setISBuy(true);
+
+        const isFound = carts.find(cart=> cart.id === model.id);
+
+        if(isFound) {
+            toast.error("Item already in Cart")
+            return;
+        }
+
         setCarts([...carts, model]);
 
         toast.success("Item added to Cart");
@@ -50,7 +58,7 @@ const Cards = ({model, carts, setCarts}) => {
                 </div>
                 
                 <div class="mt-6">
-                    <button onClick={handleBuy} className="btn btn-block bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">
+                    <button onClick={handleBuy} className= {`btn btn-block text-white rounded-full ${isBuy ? "bg-green-500" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA]"}`}>
                         {isBuy ? "Added to Card" : "Buy Now"}
                     </button>
                 </div>

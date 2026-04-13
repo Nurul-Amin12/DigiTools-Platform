@@ -1,4 +1,5 @@
 
+import { useState } from 'react'
 import './App.css'
 import Banner from './Components/Banner/Banner'
 import Summary from './Components/Banner/Summary'
@@ -19,13 +20,13 @@ const modelPromise = getModels();
 
 
 function App() {
-  
+  const [carts, setCarts] = useState([]);
 
   return (
     <>
       <div>
         <header>
-          <Navbar/>
+          <Navbar carts={carts} />
         </header>
 
         <section>
@@ -34,7 +35,7 @@ function App() {
         </section>
 
         <section>
-          <Model modelPromise={modelPromise}/>
+          <Model modelPromise={modelPromise} carts={carts} setCarts={setCarts} />
         </section>
 
         <section>

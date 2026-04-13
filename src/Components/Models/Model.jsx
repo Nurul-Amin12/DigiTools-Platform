@@ -2,12 +2,12 @@ import { use, useState } from "react";
 import Cards from "./Cards";
 import Cart from "./Cart";
 
-const Model = ({modelPromise}) => {
+const Model = ({modelPromise, carts, setCarts}) => {
     const models = use(modelPromise);
     
     const [activeTab, setActiveTab] = useState("Products");
 
-    const [carts, setCarts] = useState([]);
+    // const [carts, setCarts] = useState([]);
 
     return (
     <>
@@ -32,7 +32,7 @@ const Model = ({modelPromise}) => {
                     name="my_tabs_1" 
                     className="tab rounded-full font-bold w-30" 
                     onClick={() => setActiveTab("Cart")}
-                    aria-label={carts.length === 0 ? "Cart" : `Cart (${carts.length})`} 
+                    aria-label={carts.length === 0 ? "Cart(0)" : `Cart (${carts.length})`} 
                 />
             </div>
             
