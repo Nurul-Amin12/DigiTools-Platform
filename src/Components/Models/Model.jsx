@@ -5,9 +5,9 @@ import Cart from "./Cart";
 const Model = ({modelPromise}) => {
     const models = use(modelPromise);
     
-    const [activeTab, setActiveTab] = useState("Products")
-    console.log(activeTab);
+    const [activeTab, setActiveTab] = useState("Products");
 
+    const [carts, setCarts] = useState([]);
 
     return (
     <>
@@ -16,12 +16,13 @@ const Model = ({modelPromise}) => {
             <p>Choose from our curated collection of premium digital products designed <br/> to boost your productivity and creativity.</p>
 
 
+
             {/* name of each tab group should be unique */}
             <div className="tabs tabs-box bg-transparent justify-center">
                 <input 
                     type="radio" 
                     name="my_tabs_1" 
-                    className="tab rounded-full w-30" 
+                    className="tab rounded-full font-bold w-30" 
                     aria-label="Products"
                     onClick={() => setActiveTab("Products")} 
                     defaultChecked 
@@ -29,23 +30,23 @@ const Model = ({modelPromise}) => {
                 <input 
                     type="radio" 
                     name="my_tabs_1" 
-                    className="tab rounded-full w-30" 
+                    className="tab rounded-full font-bold w-30" 
                     onClick={() => setActiveTab("Cart")}
-                    aria-label="Cart" 
+                    aria-label={carts.length === 0 ? "Cart" : `Cart (${carts.length})`} 
                 />
             </div>
             
-            { activeTab =='Products' ?
+            { activeTab == 'Products' ?
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-10">
                     {models.map(model=> <div key={model.id} >
-                            <Cards model={model}/>
+                            <Cards model={model} carts={carts} setCarts={setCarts} />
                         </div>
                     )}
                 </div> 
                 : null
             }
 
-            { activeTab == 'Cart' ? <Cart/> : null }
+            { activeTab == 'Cart' ? <Cart carts={carts} setCarts={setCarts} /> : null }
 
         </div>
     </>
