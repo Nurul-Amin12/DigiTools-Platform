@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 const Cards = ({model, carts, setCarts}) => {
     const [isBuy, setISBuy] = useState(false);
@@ -6,6 +7,8 @@ const Cards = ({model, carts, setCarts}) => {
     const handleBuy = () => {
         setISBuy(true);
         setCarts([...carts, model]);
+
+        toast.success("Item added to Cart");
     }
 
     return (
