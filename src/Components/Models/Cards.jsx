@@ -21,7 +21,7 @@ const Cards = ({model, carts, setCarts}) => {
 
     return (
     <>
-        <div className="card w-88 bg-base-200 shadow-md h-full mx-auto">
+        <div className="card w-88 hover:w-90 bg-base-200 shadow-md h-full mx-auto">
             <div className="card-body flex flex-col justify-between">
                 
                 <div>
@@ -30,7 +30,7 @@ const Cards = ({model, carts, setCarts}) => {
                         { model.tag == 'Popular' && <span class="bg-[#e1e7ff] text-violet-600 px-3 py-1 rounded-full">{model.tag}</span>}
                         { model.tag == 'Best Seller' && <span class="bg-[#fef3c6] text-[#bb4d00] px-3 py-1 rounded-full">{model.tag}</span>}
                     </div>
-                    <div className="w-10 bg-base-100 rounded-full shadow-2xl"><img className="w-full p-2" src={model.icon}/></div>
+                    <div className="w-10 bg-base-100 rounded-full shadow-lg"> <img className="w-10 h-10 rounded-full p-1.5" src={model.icon}/></div>
                 </div>
 
                 <div>

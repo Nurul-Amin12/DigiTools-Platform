@@ -1,3 +1,6 @@
+import bannerImg from "../../assets/banner.png";
+import circleImg from "../../assets/group-5.png";
+
 const Banner = () => {
     return (
     <>
@@ -7,7 +10,7 @@ const Banner = () => {
 
                 <div className="space-y-7">
                     <div className="flex gap-2 p-2 rounded-full items-center w-71 bg-[#e1e7ff]">
-                        <span><img src="../src/assets/group-5.png"/></span>
+                    <span><img src= {circleImg} /></span>
                         <p>New: AI-Powered Tools Available</p>
                     </div>
                     <p className="text-5xl font-bold">Supercharge Your <br /> Digital Workflow</p>
@@ -34,7 +37,7 @@ const Banner = () => {
             </div>
 
             <div className="order-1 md:order-2">
-                <img className="w-full" src="../src/assets/banner.png"/>
+                <img className="w-full" src={bannerImg}/>
             </div>
 
         </div>

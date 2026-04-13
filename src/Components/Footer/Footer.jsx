@@ -1,3 +1,7 @@
+import fbImg from "../../assets/facebook.png";
+import instagramImg from "../../assets/instagram.png";
+import xImg from "../../assets/twitter.png";
+
 const Footer = () => {
   return (
     <footer className="bg-zinc-950 border-t border-red-900/50 pt-16 pb-10">
@@ -103,17 +107,17 @@ const Footer = () => {
             <ul className="flex space-x-4 text-zinc-400">
               <li>
                 <a href="#" className="hover:text-white transition">
-                  <img src="../src/assets/instagram.png"/>
+                  <img src={instagramImg} />
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition">
-                  <img src="../src/assets/facebook.png"/>
+                  <img src={fbImg} />
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition">
-                  <img src="../src/assets/twitter.png"/>
+                  <img src={xImg} />
                 </a>
               </li>
             </ul>

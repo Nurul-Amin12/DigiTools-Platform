@@ -1,3 +1,6 @@
+import packageImg from "../../assets/package.png";
+import userImg from "../../assets/user.png";
+import rocketImg from "../../assets/rocket.png";
 
 const GEtStarted = () => {
 
@@ -18,7 +21,7 @@ const GEtStarted = () => {
                                     </div>
                                 </span>
                                 <span className="mx-auto w-20 h-20 p-3 rounded-full bg-violet-300">
-                                    <img src={"../src/assets/user.png"} alt="" />
+                                    <img src={userImg} alt="" />
                                 </span>
                                 <span className="flex flex-col items-center text-center space-y-2">
                                     <h2 class="card-title">Create Account</h2>
@@ -35,7 +38,7 @@ const GEtStarted = () => {
                                     </div>
                                 </span>
                                 <span className="mx-auto w-20 h-20 p-3 rounded-full bg-violet-300">
-                                    <img src={"../src/assets/package.png"}/>
+                                    <img src={packageImg}/>
                                 </span>
                                 <span className="flex flex-col items-center text-center space-y-2">
                                     <h2 class="card-title">Choose Products</h2>
@@ -52,7 +55,7 @@ const GEtStarted = () => {
                                     </div>
                                 </span>
                                 <span className="mx-auto w-20 h-20 p-3 rounded-full bg-violet-300">
-                                    <img src={"../src/assets/rocket.png"}/>
+                                    <img src={rocketImg}/>
                                 </span>
                                 <span className="flex flex-col items-center text-center space-y-2">
                                     <h2 class="card-title">Start Creating</h2>

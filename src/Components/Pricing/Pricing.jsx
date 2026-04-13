@@ -10,7 +10,7 @@ const Pricing = () => {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
 
-                <div class="card w-96 bg-base-200 shadow-md h-full mx-auto">
+                <div class="card w-80 lg:w-92 bg-base-200 shadow-md h-full mx-auto">
                     <div class="card-body flex flex-col justify-between">
                         <div>
                             <div class="flex flex-col items-start">
@@ -46,7 +46,7 @@ const Pricing = () => {
                     </div>
                 </div>
 
-                <div class="relative card w-96 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white shadow-md h-full mx-auto">
+                <div class="relative w-80 lg:w-92 card bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white shadow-md h-full mx-auto">
                     <span class="badge badge-xs badge-warning absolute left-1/2 -translate-x-1/2 -translate-y-1/2">Most Popular</span>
             
                     <div class="card-body flex flex-col justify-between">
@@ -92,7 +92,7 @@ const Pricing = () => {
                     </div>
                 </div>
 
-                <div class="card w-96 bg-base-200 shadow-md h-full mx-auto">
+                <div class="card w-80 lg:w-92 bg-base-200 shadow-md h-full mx-auto">
                     <div class="card-body flex flex-col justify-between">
                         <div>
                             <div class="flex flex-col items-start">

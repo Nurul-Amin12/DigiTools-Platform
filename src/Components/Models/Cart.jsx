@@ -37,8 +37,8 @@ const Cart = ({carts, setCarts}) => {
                             carts.map(cart => 
                                 <div className="bg-base-200 rounded-2xl flex justify-between p-5 items-center">
                                     <div className="flex gap-5">
-                                        <div className="bg-base-100 rounded-full shadow-2xl">
-                                            <img className="w-full p-3" src={cart.icon} />
+                                        <div className="w-10 h-10 bg-base-100 rounded-full shadow-2xl">
+                                            <img className="w-10 h-10 rounded-full p-1.5" src={cart.icon} />
                                         </div>
                                         <div>
                                             <h3 className="font-bold"> {cart.name} </h3>
