@@ -22,15 +22,15 @@ const Model = ({modelPromise, carts, setCarts}) => {
                 <input 
                     type="radio" 
                     name="my_tabs_1" 
-                    className="tab rounded-full font-bold w-30" 
+                    className={`tab rounded-full font-bold w-30 ${activeTab === "Products" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : ""}`} 
                     aria-label="Products"
                     onClick={() => setActiveTab("Products")} 
                     defaultChecked 
                 />
                 <input 
                     type="radio" 
-                    name="my_tabs_1" 
-                    className="tab rounded-full font-bold w-30" 
+                    name="my_tabs_1"
+                    className={`tab rounded-full font-bold w-30 ${activeTab === "Cart" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : ""}`} 
                     onClick={() => setActiveTab("Cart")}
                     aria-label={carts.length === 0 ? "Cart(0)" : `Cart (${carts.length})`} 
                 />
