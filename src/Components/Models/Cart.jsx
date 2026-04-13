@@ -7,7 +7,11 @@ const Cart = ({carts, setCarts}) => {
         setCarts([]);
     }
 
-    
+    const handleDelete = (item) => {
+        const filterArray = carts.filter(cart => cart.id !== item.id);
+
+        setCarts(filterArray);
+    }
     
     return (
     <>
